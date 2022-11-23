@@ -4,12 +4,18 @@
  padding: 0;
  box-sizing: border-box;
 }
-body {
- font-family: cursive;
+
+.navbar {
+ display: inline;
 }
-a {
- text-decoration: none;
+
+div.site-name {
+    float:left;
+    display: inline-block;
+    box-sizing: border-box;
 }
-li {
- list-style: none;
+ul {
+    float:right;
+    display: inline-block;
+    box-sizing: border-box;
 }

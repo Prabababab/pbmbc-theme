@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 
-<nav class="navbar">
+<span class="navbar">
     <div class="site-name">
-        <?php
-        bloginfo('name')
-        ?>
+        <h1><?php bloginfo('name') ?></h1>
     </div>
     <?php
     wp_nav_menu(
         array(
-            'menu-class' => 'nav-links'
+            'menu-class' => 'nav-links',
         )
     )
     ?>
-</nav>
+</span>
