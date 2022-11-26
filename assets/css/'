@@ -1,3 +1,4 @@
+/* UTILITIES */
 * {
  margin: 0;
  padding: 0;
@@ -26,5 +27,4 @@ div.site-name {
     list-style: none;
     top: 50%;
     transform: translateY(50%);
-    margin-right: 20px;
 }

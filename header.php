@@ -7,8 +7,17 @@
     <?php
     wp_nav_menu(
         array(
-            'menu-class' => 'nav-links',
+            'container' => 'ul',
         )
-    )
+    );
     ?>
 </span>
+
+<?php
+// echo htmlspecialchars(wp_nav_menu(
+//         array(
+//             'container' => 'ul',
+//             'echo' => false,
+//         )
+//     ));
+?>
