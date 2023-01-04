@@ -13,11 +13,4 @@
     ?>
 </span>
 
-<?php
-// echo htmlspecialchars(wp_nav_menu(
-//         array(
-//             'container' => 'ul',
-//             'echo' => false,
-//         )
-//     ));
-?>
+<img src="<?php bloginfo('template_url'); ?>/assets/images/banner.png", width=100%>

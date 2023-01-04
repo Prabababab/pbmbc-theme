@@ -1,11 +1,27 @@
+:root {
+    --main-bg-color: #ebdfd4;
+    --accent-color-1: #9dcdaa;
+    --accent-color-1-dark: #468973;
+    --accent-color-2: #d1e5e3;
+    --accent-color-2-dark: #456f7e;
+    --accent-color-3: #cb0624;
+    --seperator-color: #000000;
+}
+
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg-color);
 }
 
 .navbar {
- display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 span {
@@ -17,7 +33,7 @@ div.site-name {
     float:left;
     display: inline-block;
     box-sizing: border-box;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 .menu {
     float:right;
@@ -26,5 +42,5 @@ div.site-name {
     list-style: none;
     top: 50%;
     transform: translateY(50%);
-    margin-right: 20px;
+    margin-right: 5px;
 }
