@@ -10,22 +10,21 @@
         <?php get_header(); ?>
         <?php
 
-        // Start “The Loop”
-        if ( have_posts() ) : // Does our website have any posts to  display?
+        if ( have_posts() ) :
 
-        while (  have_posts() ) : the_post(); // If the answer is “yes”, let’s run some code.
+        while (  have_posts() ) : the_post();
 
-        the_content();  // Let’s display the content of our post.
+        echo "<h1 class=\"post-title\">" . get_the_title() . "</h1>\n";
 
-        endwhile; // There  are no more posts to display, let’s shut this down.
+        the_content();
 
-        else : // If we don’t have any posts, let’s display a custom  message below.
+        endwhile;
+
+        else :
 
         _e( 'Sorry, no  posts matched your criteria.', 'textdomain' );
 
-        endif; // OK, we can stop looking for posts now.
-
-        // End of “The Loop”
+        endif;
 
         get_footer(); // Call the theme’s footer.php file.
         ?>

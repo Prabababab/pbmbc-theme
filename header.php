@@ -13,4 +13,5 @@
     ?>
 </span>
 
+
 <img src="<?php bloginfo('template_url'); ?>/assets/images/banner.png", width=100%>
