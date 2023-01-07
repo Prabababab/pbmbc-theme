@@ -104,16 +104,13 @@ p {
     display: block;
 }
 
-.nav-container {
-    display: table;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
 .comic-nav-menu {
+    float:right;
     display: inline-block;
-}
-
-.com-nav-item {
-    display: inline-block;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
