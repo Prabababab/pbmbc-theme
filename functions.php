@@ -8,6 +8,15 @@ function wp_get_current_url() {
     return home_url( $_SERVER['REQUEST_URI'] );
 }
 
+function custom_login(){
+ global $pagenow;
+ if( 'wp-login.php' == $pagenow ) {
+  wp_redirect('http://test-site.test/login');
+ }
+}
+
+add_action('init','custom_login');
+
 function ret_first_webcomic_link( string $link = '&laquo;', $post = null, $args = [] ) {
 	if ( 3 < func_num_args() || false !== strpos( $link, '%link' ) || is_string( $post ) || ! is_array( $args ) || isset( $args[0] ) ) {
 		webcomic_error( __( 'The classic behavior of first_webcomic_link() is deprecated; please refer to the first_webcomic_link() documentation for updated usage information.', 'webcomic' ) );
